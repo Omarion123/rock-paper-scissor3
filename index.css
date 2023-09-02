@@ -36,7 +36,7 @@
 body {
   text-align: center;
   color: white;
-  background: url(background.jpg);
+  background: url(background.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -87,6 +87,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition-duration: 0.3s;
+  animation: bounce;
+  animation-duration: 2s;
 }
 
 /* Hover effect */
