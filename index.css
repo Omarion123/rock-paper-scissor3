@@ -1,0 +1,111 @@
+@keyframes zoom {
+  10% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.5);
+    background-color: #45a049;
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+@keyframes colorTravel {
+  0% {
+    color: rgb(2, 23, 2);
+    text-shadow: 0 0 5px rgba(2, 23, 2, 0.5);
+  }
+  25% {
+    color: rgb(23, 2, 2);
+    text-shadow: 0 0 5px rgba(23, 2, 2, 0.5);
+  }
+  50% {
+    color: rgb(2, 2, 23);
+    text-shadow: 0 0 5px rgba(2, 2, 23, 0.5);
+  }
+  75% {
+    color: rgb(23, 23, 2);
+    text-shadow: 0 0 5px rgba(23, 23, 2, 0.5);
+  }
+  100% {
+    color: rgb(2, 23, 2);
+    text-shadow: 0 0 5px rgba(2, 23, 2, 0.5);
+  }
+}
+
+body {
+  text-align: center;
+  color: white;
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.game {
+  padding: 20px;
+}
+/* .h22 {
+  font-size: 70px;
+  color: rgb(2, 23, 2);
+  animation-name: bounce;
+  animation-duration: 5s;
+} */
+.h22 {
+  font-size: 70px;
+  color: rgb(2, 23, 2);
+  text-shadow: 0 0 5px rgba(2, 23, 2, 0.5);
+  animation-name: colorTravel;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; /* Make the animation loop */
+}
+#gameDiv {
+  background-color: #af2676;
+  border: 5px solid rgb(9, 245, 9);
+  border-radius: 30px;
+  width: 600px;
+  height: 300px;
+  margin: 0% 30%;
+}
+.gameText {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.btns {
+  margin-right: 150px;
+  padding-top: 50px;
+}
+.choiceBtn {
+  background-color: rgb(14, 116, 14);
+  border: solid #af2676;
+  outline: 0;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+}
+
+/* Hover effect */
+.choiceBtn:hover {
+  background-color: #45a049;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back {
+  background: #af2676;
+  color: white;
+  font-size: 25px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  margin: 18px auto 0;
+  padding: 12px;
+  cursor: pointer;
+}
+.simple {
+  display: none;
+}
